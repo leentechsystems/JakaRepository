@@ -54,7 +54,7 @@ function onOnline() {
             // $(location).attr('href','www/slider.html');
              //$.mobile.changePage('/www/slider.html');
              //super.loadUrl("file:///android_asset/www/index.html");
-             var ref = window.open('www/slider.html', '_blank', 'location=no');
+             var ref = window.open('http://mobile.jakasecurities.ph/walkthrough/start.php', '_blank', 'location=no');
              ref.addEventListener('loaderror', function(event) { ref.close(); location.reload(); });
              
       }, 3000);
