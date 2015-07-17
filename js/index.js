@@ -1,6 +1,8 @@
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
+ * or more cont
+
+ ributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
  * regarding copyright ownership.  The ASF licenses this file
  * to you under the Apache License, Version 2.0 (the
@@ -50,12 +52,12 @@ function onOnline() {
     $("#main_message").addClass('hide');
     $("#sub_message").addClass('hide');
     setTimeout(function(){
-            //$('#iliketomoveit1').click();
+            $('#iliketomoveit1').click();
             // $(location).attr('href','www/slider.html');
              //$.mobile.changePage('/www/slider.html');
              //super.loadUrl("file:///android_asset/www/index.html");
-             var ref = window.open('http://mobile.jakasecurities.ph/walkthrough/start.php', '_blank', 'location=no');
-             ref.addEventListener('loaderror', function(event) { ref.close(); location.reload(); });
+             //var ref = window.open('http://mobile.jakasecurities.ph/walkthrough/start.php', '_blank', 'location=no');
+             //ref.addEventListener('loaderror', function(event) { ref.close(); location.reload(); });
              
       }, 3000);
 }
