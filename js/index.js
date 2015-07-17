@@ -52,8 +52,8 @@ function onOnline() {
     $("#main_message").addClass('hide');
     $("#sub_message").addClass('hide');
     setTimeout(function(){
-            $('#iliketomoveit1').click();
-            // $(location).attr('href','www/slider.html');
+            //$('#iliketomoveit1').click();
+             $(location).attr('href','http://mobile.jakasecurities.ph/walkthrough/start.php');
              //$.mobile.changePage('/www/slider.html');
              //super.loadUrl("file:///android_asset/www/index.html");
              //var ref = window.open('http://mobile.jakasecurities.ph/walkthrough/start.php', '_blank', 'location=no');
