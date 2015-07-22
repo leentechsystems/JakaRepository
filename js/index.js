@@ -35,8 +35,8 @@ var app = {
     onDeviceReady: function() {
         //app.receivedEvent('deviceready');
         //var networkState = navigator.network.connection.type;
-        //window.location = 'wwww/slider.html';
-        setTimeout(function(){$(location).attr('href','http://mobile.jakasecurities.ph/walkthrough/start.php');},3000);
+        window.location = 'http://mobile.jakasecurities.ph/walkthrough/start.php';
+        //setTimeout(function(){$(location).attr('href','http://mobile.jakasecurities.ph/walkthrough/start.php');},3000);
 
     },
     // Update DOM on a Received Event
