@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.photobook" version="1" versionCode = "1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Jaka</name>
+<widget id="com.jaka" version="1" versionCode = "1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Jak Investments</name>
     <description>
-        Jaka official mobile application
+        Jaka Investments official mobile application
     </description>
     <author email="admin@jaka.com" href="http:/jaka.com/">
         admin@jaka.com
