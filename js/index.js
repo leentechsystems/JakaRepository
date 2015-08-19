@@ -53,8 +53,8 @@ function onOnline() {
     $("#sub_message").addClass('hide');
     setTimeout(function(){
             //$('#iliketomoveit1').click();
-             var ref = $(location).attr('href','http://mobile.jakasecurities.ph/walkthrough/start.php');
-             //var ref = window.open('http://mobile.jakasecurities.ph/walkthrough/start.php', '_blank', 'location=yes');
+             //var ref = $(location).attr('href','http://mobile.jakasecurities.ph/walkthrough/start.php');
+             var ref = window.open('http://mobile.jakasecurities.ph/walkthrough/start.php', '_blank', 'location=no,toolbar=no');
              ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
              ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
              ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
