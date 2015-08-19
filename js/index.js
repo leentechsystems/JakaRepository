@@ -27,6 +27,10 @@
 //
 document.addEventListener("deviceready", onDeviceReady, false);
 document.addEventListener("offline", onOffline, false);
+document.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+document.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
+document.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+document.addEventListener('exit', function(event) { alert(event.type); });
 // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
 //
 function onDeviceReady() {
