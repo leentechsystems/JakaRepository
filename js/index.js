@@ -54,14 +54,14 @@ function onOnline() {
     setTimeout(function(){
             //$('#iliketomoveit1').click();
             // var ref = $(location).attr('href','http://mobile.jakasecurities.ph/walkthrough/start.php');
-             var ref = window.open('http://mobile.jakasecurities.ph/walkthrough/start.php', '_blank', 'location=no');
+             var ref = window.open('http://mobile.jakasecurities.ph/walkthrough/start.php', '_blank', 'location=yes');
              ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
              ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
              ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
              ref.addEventListener('exit', function(event) { alert(event.type); });
              //$.mobile.changePage('/www/slider.html');
              //super.loadUrl("file:///android_asset/www/index.html");
-             var ref = window.open('http://mobile.jakasecurities.ph/walkthrough/start.php', '_blank', 'location=no');
+             //var ref = window.open('http://mobile.jakasecurities.ph/walkthrough/start.php', '_blank', 'location=no');
              //ref.addEventListener('loaderror', function(event) { ref.close(); location.reload(); });
              
       }, 3000);
