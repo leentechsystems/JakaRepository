@@ -55,7 +55,7 @@ function onOnline() {
     $("#message").addClass('hide');
     $("#main_message").addClass('hide');
     $("#sub_message").addClass('hide');
-    navigator.device.overrideBackButton();
+    //navigator.device.overrideBackButton();
     setTimeout(function(){
             //$('#iliketomoveit1').click();
              //$(location).attr('href','http://mobile.jakasecurities.ph/walkthrough/start.php');
