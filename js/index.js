@@ -55,6 +55,7 @@ function onOnline() {
     $("#message").addClass('hide');
     $("#main_message").addClass('hide');
     $("#sub_message").addClass('hide');
+    navigator.device.overrideBackButton();
     setTimeout(function(){
             //$('#iliketomoveit1').click();
              //$(location).attr('href','http://mobile.jakasecurities.ph/walkthrough/start.php');
@@ -63,7 +64,7 @@ function onOnline() {
              ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
              ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
              ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
-             ref.addEventListener('backbutton', function(event) { alert('back to: ' + event.url); }, false);
+             ref.addEventListener('backKeyUp', function(event) { alert('back to: ' + event.url); }, false);
              ref.addEventListener('exit', function(event) { alert(event.type); });
              // //$.mobile.changePage('/www/slider.html');
              //super.loadUrl("file:///android_asset/www/index.html");
