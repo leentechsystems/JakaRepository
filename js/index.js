@@ -63,7 +63,7 @@ function onOnline() {
              ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
              ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
              ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
-             ref.addEventListener('backbutton', function(event) { window.history.back(); });
+             ref.addEventListener('backbutton', function(event) { ref.history.back(); });
              ref.addEventListener('exit', function(event) { alert(event.type); });
              // //$.mobile.changePage('/www/slider.html');
              //super.loadUrl("file:///android_asset/www/index.html");
