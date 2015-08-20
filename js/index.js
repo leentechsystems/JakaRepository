@@ -61,10 +61,12 @@ function onOnline() {
              //$(location).attr('href','http://mobile.jakasecurities.ph/walkthrough/start.php');
              var ref = window.open('http://mobile.jakasecurities.ph/walkthrough/start.php', '_blank', 'location=no,toolbar=no');
              
+             document.addEventListener("backbutton", function(event) { alert('back to: ' + event.url); }, false); 
+
              ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
              ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
              ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
-             ref.addEventListener('backKeyUp', function(event) { alert('back to: ' + event.url); }, false);
+             //ref.addEventListener('backbutton', function(event) { alert('back to: ' + event.url); }, false);
              ref.addEventListener('exit', function(event) { alert(event.type); });
              // //$.mobile.changePage('/www/slider.html');
              //super.loadUrl("file:///android_asset/www/index.html");
