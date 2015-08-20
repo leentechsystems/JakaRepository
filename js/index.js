@@ -27,10 +27,10 @@
 //
 document.addEventListener("deviceready", onDeviceReady, false);
 document.addEventListener("offline", onOffline, false);
-document.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
-document.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
-document.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
-document.addEventListener('exit', function(event) { alert(event.type); });
+// document.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+// document.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
+// document.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+// document.addEventListener('exit', function(event) { alert(event.type); });
 // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
 //
 function onDeviceReady() {
@@ -57,13 +57,15 @@ function onOnline() {
     $("#sub_message").addClass('hide');
     setTimeout(function(){
             //$('#iliketomoveit1').click();
-             var ref = $(location).attr('href','http://mobile.jakasecurities.ph/walkthrough/start.php');
-             //var ref = window.open('http://mobile.jakasecurities.ph/walkthrough/start.php', '_blank', 'location=no,toolbar=no');
-             $(location).addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
-             $(location).addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
-             $(location).addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
-             $(location).addEventListener('exit', function(event) { alert(event.type); });
-             //$.mobile.changePage('/www/slider.html');
+             //$(location).attr('href','http://mobile.jakasecurities.ph/walkthrough/start.php');
+             var ref = window.open('http://mobile.jakasecurities.ph/walkthrough/start.php', '_blank', 'location=no,toolbar=no');
+             
+             ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+             ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
+             ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+             ref.addEventListener('backbutton', function(event) { window.history.back(); });
+             ref.addEventListener('exit', function(event) { alert(event.type); });
+             // //$.mobile.changePage('/www/slider.html');
              //super.loadUrl("file:///android_asset/www/index.html");
              //var ref = window.open('http://mobile.jakasecurities.ph/walkthrough/start.php', '_blank', 'location=no');
              //ref.addEventListener('loaderror', function(event) { ref.close(); location.reload(); });
